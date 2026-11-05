@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#0e0921">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Welcome | DateWithMe</title>
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/setup.css">
+  <script defer src="/setup.js"></script>
+</head>
+<body>
+  <div class="ambient" aria-hidden="true"><div class="orb orb-a"></div><div class="orb orb-b"></div><div class="orb orb-c"></div></div>
+  <main class="setup-layout">
+    <section class="intro" aria-labelledby="welcome-title">
+      <div class="wordmark"><span class="heart">♡</span> DateWith<span>Me</span></div>
+      <div class="eyebrow">FIRST TIME SETUP</div>
+      <h1 id="welcome-title">Make it <em>yours.</em></h1>
+      <p>Create a private invitation space that feels like you. Choose your name, language and privacy settings before inviting anyone.</p>
+      <div class="preview-card" aria-label="Brand preview">
+        <div class="preview-top"><span>PERSONAL PREVIEW</span><span>✦</span></div>
+        <div class="preview-logo">DateWith<strong id="preview-name">Me</strong></div>
+        <div class="preview-heart" aria-hidden="true">♡</div>
+        <div class="preview-hello">Wanna go on a date with me? ;)</div>
+        <div class="preview-buttons"><span>Yes 💕</span><span>No</span></div>
+      </div>
+      <div class="privacy"><span>✧</span> Self-hosted by you. No analytics. No external account required.</div>
+    </section>
+    <section class="wizard" aria-labelledby="wizard-title">
+      <div class="step-line" role="progressbar" aria-valuemin="1" aria-valuemax="3" aria-valuenow="1" id="progress"><span class="active"></span><span></span><span></span></div>
+      <form id="setup-form" novalidate>
+        <div class="form-step" data-step="1">
+          <div class="step-label">STEP 01 / 03</div>
+          <h2 id="wizard-title">Your identity</h2>
+          <p>We'll use your name to personalize the site and invitations. You can change it later.</p>
+          <label for="owner_name">Your first name or display name</label>
+          <input id="owner_name" name="owner_name" required maxlength="60" autocomplete="nickname" placeholder="e.g., Burak">
+          <label for="language">Default interface language</label>
+          <select id="language" name="language"></select>
+          <label for="timezone">Time zone (IANA)</label>
+          <input id="timezone" name="timezone" list="timezone-list" required placeholder="Europe/London" spellcheck="false">
+          <datalist id="timezone-list"><option value="UTC"><option value="Europe/London"><option value="Europe/Istanbul"><option value="Europe/Berlin"><option value="America/New_York"><option value="America/Los_Angeles"><option value="Asia/Tokyo"><option value="Asia/Dubai"></datalist>
+          <button class="primary" type="button" data-next>Continue <span>→</span></button>
+        </div>
+        <div class="form-step hidden" data-step="2">
+          <div class="step-label">STEP 02 / 03</div>
+          <h2>Secure your space</h2>
+          <p>The setup token proves that you control this installation. It is stored locally and expires when setup is complete.</p>
+          <label for="token">One-time installation token</label>
+          <input id="token" name="token" required autocomplete="off" spellcheck="false" placeholder="Paste the token from secrets/setup.token">
+          <small>Docker: run <code>docker compose exec datewithme cat /secrets/setup.token</code></small>
+          <label for="password">Administrator password (minimum 14 characters)</label>
+          <input id="password" name="password" type="password" minlength="14" maxlength="256" required autocomplete="new-password" placeholder="Create a strong password">
+          <label for="confirm">Confirm administrator password</label>
+          <input id="confirm" name="confirm" type="password" minlength="14" required autocomplete="new-password" placeholder="Repeat your password">
+          <div class="actions"><button class="secondary" type="button" data-back>Back</button><button class="primary" type="button" data-next>Continue <span>→</span></button></div>
+        </div>
+        <div class="form-step hidden" data-step="3">
+          <div class="step-label">STEP 03 / 03</div>
+          <h2>Almost there</h2>
+          <p>A public address is optional. You can use DateWithMe locally now and configure your domain or Cloudflare Tunnel later in Settings.</p>
+          <label for="public_base_url">Public site URL (optional)</label>
+          <input id="public_base_url" name="public_base_url" type="url" placeholder="https://dates.example.com" spellcheck="false" value="">
+          <small>Leave blank to use DateWithMe locally. For public deployments, use an HTTPS address that you control. You can add or change it after setup.</small>
+          <div class="confirm-card"><strong>Ready to make it official?</strong><p>Your encrypted storage, dashboard and personal branding will be created on this server.</p></div>
+          <div class="actions"><button class="secondary" type="button" data-back>Back</button><button class="primary" type="submit" id="finish">Finish setup <span>♡</span></button></div>
+        </div>
+        <div class="form-step hidden" data-step="done"><div class="success-icon">✓</div><h2>You're all set.</h2><p>Your personal space is ready. Sign in to the dashboard to create your first invitation.</p><a href="/panel" class="primary as-link">Open dashboard →</a></div>
+        <p class="form-error" id="error" role="alert" aria-live="polite"></p>
+      </form>
+      <div class="bottom-line">DateWithMe <span>by Orictux</span> · MIT License</div>
+    </section>
+  </main>
+</body>
+</html>

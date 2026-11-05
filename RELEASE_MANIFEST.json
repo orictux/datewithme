@@ -1,0 +1,441 @@
+{
+  "project": "DateWithMe",
+  "publisher": "Orictux",
+  "version": "1.4.9",
+  "stage": "public release source",
+  "license": "MIT",
+  "default_local_port": 8031,
+  "tests": {
+    "python": "94 passed in three isolated groups",
+    "javascript_syntax": "passed",
+    "independent_security_audit": "not completed",
+    "live_docker_test": "user validated preceding beta v0.9.2"
+  },
+  "donations": {
+    "network": "Bitcoin mainnet",
+    "address": "bc1qef95nyx6wrlyhnnzhhnz70qpan8j5tgvtdeh00",
+    "qr_decoded_and_verified": true
+  },
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "54ea377a9fa0284dc26e97f90e0e20ec3081e806b2344437f82c4988e10d7e9d",
+      "bytes": 172
+    },
+    {
+      "path": ".env.example",
+      "sha256": "a4cc746ba97937fddabfa3edd4a86382f9fc4e35cfbca8327d7456f82dd47c43",
+      "bytes": 237
+    },
+    {
+      "path": ".github/FUNDING.yml",
+      "sha256": "2b010ebff42cdc10a385e4f504c81dff8de9fa778258b7b51e769cd51aad48a4",
+      "bytes": 70
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "sha256": "efe35b04741cc513b7fecc935d603508aff876b23c82979b0a3300f299c3ea37",
+      "bytes": 193
+    },
+    {
+      "path": ".github/workflows/ci.yml",
+      "sha256": "09587e936c033bedd6f5c37b3122bba988682d96bf7283a8d3f8265a723b141e",
+      "bytes": 657
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "81e37d4a7df1f1e2ed75a36b9617dcf10c00c8cdd691e0f50ba78ffd2d0fb913",
+      "bytes": 361
+    },
+    {
+      "path": "CHANGELOG.md",
+      "sha256": "92784bf4acffd14947eb2acc0bf8d29bad0431016bfcbd6951a6d9a3fbd8e850",
+      "bytes": 432
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "sha256": "f0fd27d09d2194b1f3bc56d6f9bfd49a9b05f641c705a8c018705e9853be72ba",
+      "bytes": 1331
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "b32a2f738392838e35a0153a73bcc964abfec0102691dd19e4550282e6bead80",
+      "bytes": 943
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "3d1d883bee59605a9cf893efd3ae2a4adc1a5c72996771fcfebf2a34ac4f68a6",
+      "bytes": 1064
+    },
+    {
+      "path": "README.md",
+      "sha256": "6bb8405a3670c4ec3da3b00a9706b3ba853a8d661f7915195f5acc067163babf",
+      "bytes": 8771
+    },
+    {
+      "path": "RELEASE_NOTES.md",
+      "sha256": "07ca54e1f3c0b689ce717e2b3d7537652da8d919383b7c08f6bbd8df8319c190",
+      "bytes": 1238
+    },
+    {
+      "path": "SECURITY.md",
+      "sha256": "183468e764d8c3db0bde33babb10df88037020b2543a5a03c8446c87cf70d4c0",
+      "bytes": 1937
+    },
+    {
+      "path": "THIRD_PARTY_LICENSES.md",
+      "sha256": "7dd58a3250b400ead7c3a965ada4fc1534762dc34dd989bbaa169dbd82f911f0",
+      "bytes": 916
+    },
+    {
+      "path": "VERSION",
+      "sha256": "c7ec5b917108bf8f2189f99515c56d2437598fa77f6e65f0cb72e9e1de693d56",
+      "bytes": 6
+    },
+    {
+      "path": "app/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "app/features130.py",
+      "sha256": "8b0cf80719b862032f8a4994965e43865aeec661626fa38e67db029a240c0ef6",
+      "bytes": 22102
+    },
+    {
+      "path": "app/features140.py",
+      "sha256": "d1267028cefade964c73c9d5dbd18906e068983b4e08cd03e6eb7c766219606c",
+      "bytes": 5356
+    },
+    {
+      "path": "app/features141.py",
+      "sha256": "2eb9bf6ba8d3908de1a8b2c9fead051435c0c3031e9f22bd5987655ad0381408",
+      "bytes": 12433
+    },
+    {
+      "path": "app/image_pipeline.py",
+      "sha256": "4ea24fa9e7be94b4a12506ae0cfecd68bce177a7f5e00d95010a9068d3691393",
+      "bytes": 8500
+    },
+    {
+      "path": "app/installation.py",
+      "sha256": "fc868d0b2a894f34d07dd5529f640ccafd9346bd0182a9cf071eb44b8262b9fb",
+      "bytes": 3570
+    },
+    {
+      "path": "app/main.py",
+      "sha256": "115447521584c260b21fd0abb47520a71181f329aae59b14aa5b62049b421bfc",
+      "bytes": 76361
+    },
+    {
+      "path": "app/presets.py",
+      "sha256": "1399fd4cab60797e3ef18fbeccf5e2883a04bcba23b14c2ba9c1c7035d2aa817",
+      "bytes": 8427
+    },
+    {
+      "path": "app/store.py",
+      "sha256": "e4607b544265aa2c44660073a79fc9171961504aa62c95a7513c7fc04dd1e5de",
+      "bytes": 14500
+    },
+    {
+      "path": "assets/badges/documentation.svg",
+      "sha256": "164cc976ad7aa791f1aa3c63fe584c21796c8752a04eb8e62787fb279b2ca201",
+      "bytes": 646
+    },
+    {
+      "path": "assets/badges/donate-btc.svg",
+      "sha256": "b09f501cd5b08b6aece22e8f36f60738073d3ad33bbcfb091895815fd3cbab1b",
+      "bytes": 640
+    },
+    {
+      "path": "assets/badges/features.svg",
+      "sha256": "5b766802b2bb4c864cf0c387b9d72291758dd62e4d577921fa49a996101dff24",
+      "bytes": 636
+    },
+    {
+      "path": "assets/badges/mit-license.svg",
+      "sha256": "4aa6bb1e8760360ccf86621b60a8b0c3a846107a27e917c7ff1c6d80eef3b59a",
+      "bytes": 642
+    },
+    {
+      "path": "assets/badges/platforms.svg",
+      "sha256": "6a6bb8e4863005c25b58fc52a9fe6af46f27f3f9636b40c7e67596c96f83ced3",
+      "bytes": 633
+    },
+    {
+      "path": "assets/badges/quick-start.svg",
+      "sha256": "238951315411644c85fd5e712d4f5673d596bea6aaff4f304ed15843e8d146d1",
+      "bytes": 642
+    },
+    {
+      "path": "assets/badges/release.svg",
+      "sha256": "e96f147816d10669b36a044291d74d937b38356cb85b42f57dde8e6b76fdae5e",
+      "bytes": 651
+    },
+    {
+      "path": "assets/badges/self-hosting.svg",
+      "sha256": "9f0da30886baf4e6ea99da9c79835d3807db48e7c8bbb6afeec922efb6372164",
+      "bytes": 644
+    },
+    {
+      "path": "assets/branding/README.md",
+      "sha256": "885a5b3662a020efae5c6bb350344d4662f2186132e3da76b75e1dcd300e457e",
+      "bytes": 582
+    },
+    {
+      "path": "assets/branding/datewithme-hero.png",
+      "sha256": "a2b37461fa110dd8fc84360138fbbc397e005f46f27a2e182eef8911fce96070",
+      "bytes": 370436
+    },
+    {
+      "path": "assets/branding/orictux-btc-qr.png",
+      "sha256": "4e6580d957893e7d7f164ab3f2e2c2aaae7294adffb4d9eb45e76e9023354ebb",
+      "bytes": 2291
+    },
+    {
+      "path": "assets/branding/orictux-logo-original.png",
+      "sha256": "8606e8c4ce32a74068661bcabf271cd43d6f3c4b4c08af073e8f94e6726220ab",
+      "bytes": 1666882
+    },
+    {
+      "path": "assets/branding/orictux-logo.png",
+      "sha256": "e8dc84123893f5158b8a8ea5ad033e91f32aa4a83676f8211c5257b2ba42d13f",
+      "bytes": 223795
+    },
+    {
+      "path": "assets/screenshots/activity-decks.png",
+      "sha256": "09c0ded18fc9260cd0348f28063f1f8c9f34e06cd808532014cfa8312b1ab1cb",
+      "bytes": 453631
+    },
+    {
+      "path": "assets/screenshots/first-run-setup.png",
+      "sha256": "88f5d4fb5acc54df12f4980fcdfe68b0e0f462d43db33560360d2776cca5c37a",
+      "bytes": 457556
+    },
+    {
+      "path": "assets/screenshots/invitation-management.png",
+      "sha256": "dae26b31eccceb2f384735446e8a1aca95510dbed212b4807e0214717d1e0e80",
+      "bytes": 434764
+    },
+    {
+      "path": "assets/screenshots/mobile-overview.png",
+      "sha256": "95163150d251a9eb0e4c411bcc8b8ae07c621dcf80f9f1ec8cec5d0c5873b037",
+      "bytes": 182376
+    },
+    {
+      "path": "compose.yaml",
+      "sha256": "2ef79cdd46f6611cf2226c0eaaadcc861b853195e5d90bb410bb4cc85b818c7b",
+      "bytes": 997
+    },
+    {
+      "path": "docs/DEPLOYMENT.md",
+      "sha256": "b1468e5cbc68dee3fd2b3061da370a5919569c1115f902a18825a28be3eb5dd0",
+      "bytes": 5201
+    },
+    {
+      "path": "docs/NATIVE_LINUX.md",
+      "sha256": "1ca8b6b709d4930cc0463ac8f8614f1b37e6c715a60f08b8737c039f0adb8c87",
+      "bytes": 1221
+    },
+    {
+      "path": "docs/PUBLISHING.md",
+      "sha256": "817971a0f74ad5aeacbb9f754b773ef011715d09c741817125d125d4c4b2536d",
+      "bytes": 3002
+    },
+    {
+      "path": "docs/RELEASE_CHECKLIST.md",
+      "sha256": "0f8344736721826c7a1713007f2308d79bbe9bf18be417b817d445838d6278dc",
+      "bytes": 1475
+    },
+    {
+      "path": "docs/TEST_REPORT.md",
+      "sha256": "207c47a6e3b12c69d32ad10401ac073c81f1440142f73c8a23ef65de9f44543d",
+      "bytes": 1276
+    },
+    {
+      "path": "pyproject.toml",
+      "sha256": "a5b2875cfaba824c4028c449deb6dc0dbe97b3040d6667414ed70b5c3d122c23",
+      "bytes": 445
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "2bd7510ee2ec0ffde0a28a471ad7cc43e1213334264edfd3b4cb506daa8195d1",
+      "bytes": 141
+    },
+    {
+      "path": "tests/conftest.py",
+      "sha256": "69a53b2cec0798614f29d4a59734838b11dffdac7ef2750c6c78166ca64c9492",
+      "bytes": 96
+    },
+    {
+      "path": "tests/test_admin_upgrades_v141.py",
+      "sha256": "de91f2520f52950cbcb85717dd8d26b278e1a1d16db0493fa79ee666c727f8ba",
+      "bytes": 8620
+    },
+    {
+      "path": "tests/test_app.py",
+      "sha256": "8df41949ceba81ff1c8fc0f4115b429035b0bdc6eb1f50be24fb7e5e0cc466bb",
+      "bytes": 9287
+    },
+    {
+      "path": "tests/test_atomic_assets_v123.py",
+      "sha256": "f660b7d168e0f8e9427b389b2c31aed9692ea2d297866136846384e50fb1f6d1",
+      "bytes": 1519
+    },
+    {
+      "path": "tests/test_decks.py",
+      "sha256": "ba6ffd322b9d6fa4aae41f6c8b6cbfed7e1536b017b6be9cf04b6d93e38c8098",
+      "bytes": 9316
+    },
+    {
+      "path": "tests/test_dynamic_branding_v092.py",
+      "sha256": "ef8eaa349704f0b2aa95845fdea0ad924790fd7db8d9d914a1b1556bf31a6ad1",
+      "bytes": 2785
+    },
+    {
+      "path": "tests/test_experience_v140.py",
+      "sha256": "be2f3ef06a93528f7d0902591836ac1198e7ffdad019dae444db01f089486831",
+      "bytes": 7760
+    },
+    {
+      "path": "tests/test_media_v131.py",
+      "sha256": "c898defe617eea3b9ca51b99b78c66b58e7a7a6ddbe06b297b74c349eb41c6d0",
+      "bytes": 4877
+    },
+    {
+      "path": "tests/test_mobile_dashboard_v092.py",
+      "sha256": "6bc3218eb5d37c627d3b4bda1edaf67c0d47e18f9d782f9a1974894231dc7fb7",
+      "bytes": 1662
+    },
+    {
+      "path": "tests/test_mobile_locale_v124.py",
+      "sha256": "25663d3297732eb1afba4a2b71c1a25e56d10d8dbab1e7b13a109e6f2c5966bd",
+      "bytes": 3497
+    },
+    {
+      "path": "tests/test_notifications_v120.py",
+      "sha256": "1dcae3af7a48924009a61b677a933a8c7f105be9dfebf23ad4c934a88456b630",
+      "bytes": 6791
+    },
+    {
+      "path": "tests/test_people_management_v132.py",
+      "sha256": "de75086f89d7d26d777e7b44288ec471de07e95f2b33298e7209151c044cb349",
+      "bytes": 3296
+    },
+    {
+      "path": "tests/test_public_setup.py",
+      "sha256": "4e2d9f790c2417d4e31e0ed2cd36b7e921cc5f57cc54cea543ba9cc4186b195d",
+      "bytes": 11068
+    },
+    {
+      "path": "tests/test_release_metadata.py",
+      "sha256": "12f88cf4a8670c1dbffd11c435b9623d0bfdf09f8c1447e18b1393ee1b16cdff",
+      "bytes": 998
+    },
+    {
+      "path": "tests/test_secure_session.py",
+      "sha256": "ec136b3285eb64314bb0db5120c3f2d2df9aa75fead4ccddca53dd70abe1bcea",
+      "bytes": 1587
+    },
+    {
+      "path": "tests/test_support_page.py",
+      "sha256": "d42ac73e9c664f88b6fb7df21a1686a580a4ee9015637350dff47bfdc0d6868a",
+      "bytes": 2799
+    },
+    {
+      "path": "tests/test_surprises_v130.py",
+      "sha256": "146384a1286278b5faa9fb6440a3f24148882dd310adb651c84f06ef24569f4f",
+      "bytes": 7576
+    },
+    {
+      "path": "tests/test_webview_cache_v122.py",
+      "sha256": "e846b83defad2c7ab96c4f9f8a0ce4fc6e85feab3a2456c183a76a9e9ab2332c",
+      "bytes": 897
+    },
+    {
+      "path": "web/apple-touch-icon.png",
+      "sha256": "c8139ed7264d78b539a1529979efc0c8f3055549796f961ac519a54d54d52956",
+      "bytes": 2116
+    },
+    {
+      "path": "web/client.js",
+      "sha256": "6538ba5ca7365df95031090a43a9149bf5f4faa4f5385d04c578b676d077b001",
+      "bytes": 185824
+    },
+    {
+      "path": "web/favicon.svg",
+      "sha256": "8594055992b06d59b6f3d7897f69a4201a4c8262f290171dae54f60a9813bc07",
+      "bytes": 382
+    },
+    {
+      "path": "web/icon-192.png",
+      "sha256": "da73ad0acae70d367610b562c267e18d78e28f7f643b2a38dc193a438c55e227",
+      "bytes": 2208
+    },
+    {
+      "path": "web/icon-512.png",
+      "sha256": "5cf265b68751d7a33e66bba7b5a3fc613ef3ff22ecb015cf5ed222dc44d29c5a",
+      "bytes": 6717
+    },
+    {
+      "path": "web/index.html",
+      "sha256": "7cc86aeccd810d618bca6d868de3dbeac0535e5d551ebb859fd98fa86419f9be",
+      "bytes": 2054
+    },
+    {
+      "path": "web/layout.css",
+      "sha256": "bcf680ec05d332fc4b8e14879fa392c39b6b2f9b751809c40a56821069701576",
+      "bytes": 52172
+    },
+    {
+      "path": "web/manifest.webmanifest",
+      "sha256": "52edfbb2351b7e3b443a2ce4433292fae49a6d51d8fe24d28fc43473ab132bc1",
+      "bytes": 535
+    },
+    {
+      "path": "web/og-datewithme.png",
+      "sha256": "57ae3084240f3e010a3c6842b50b1c5538473567e4e4037ac1dc5d1faf59d9ba",
+      "bytes": 138699
+    },
+    {
+      "path": "web/orictux-logo.png",
+      "sha256": "e8dc84123893f5158b8a8ea5ad033e91f32aa4a83676f8211c5257b2ba42d13f",
+      "bytes": 223795
+    },
+    {
+      "path": "web/recovery.js",
+      "sha256": "b62977945e1fc890530c0586850663d676fe46718ef939fa822a3c4cbdbddbb5",
+      "bytes": 1880
+    },
+    {
+      "path": "web/robots.txt",
+      "sha256": "9def66d83f0f3206cbb64ae865450afadc8a573522fd5aa34577d5d70309e134",
+      "bytes": 64
+    },
+    {
+      "path": "web/service-worker.js",
+      "sha256": "f3a0ac284225484d6839d345a09967286d66b07602b25251e8a978ad55781b82",
+      "bytes": 1061
+    },
+    {
+      "path": "web/setup.css",
+      "sha256": "9da4e1296028bd02e4b2f96e1aa626e3aec7fbb3787df92e9b68724db29a1a9d",
+      "bytes": 5549
+    },
+    {
+      "path": "web/setup.html",
+      "sha256": "c4ad04b63a8be59ba62b092981f5b30d4a0eea04cdb53ba9a1bc138f8e0aef06",
+      "bytes": 5847
+    },
+    {
+      "path": "web/setup.js",
+      "sha256": "00e744e62a0923e5ea79778e2fe675cf24fd25d1d403aaa0fabd125ac2008f2f",
+      "bytes": 2892
+    },
+    {
+      "path": "web/support-btc-qr.png",
+      "sha256": "4e6580d957893e7d7f164ab3f2e2c2aaae7294adffb4d9eb45e76e9023354ebb",
+      "bytes": 2291
+    }
+  ]
+}

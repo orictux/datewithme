@@ -1,0 +1,36 @@
+services:
+  datewithme:
+    build: .
+    image: datewithme:local
+    container_name: datewithme
+    restart: unless-stopped
+    init: true
+    ports:
+      - "${BIND_ADDRESS:-127.0.0.1}:${PORT:-8031}:8080"
+    environment:
+      COOKIE_SECURE: ${COOKIE_SECURE:-1}
+      ALLOW_INSECURE_HTTP: ${ALLOW_INSECURE_HTTP:-0}
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-}
+      LOCAL_PORT: ${PORT:-8031}
+      ENABLE_REMINDER_THREAD: "1"
+      GIPHY_API_KEY: ${GIPHY_API_KEY:-}
+    volumes:
+      - datewithme-data:/data
+      - datewithme-secrets:/secrets
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    pids_limit: 128
+    read_only: true
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8080/api/health', timeout=4).close()"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 30s
+volumes:
+  datewithme-data:
+  datewithme-secrets:
